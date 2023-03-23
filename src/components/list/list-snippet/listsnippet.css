@@ -1,0 +1,17 @@
+.ListSnippet {
+  height: 70px;
+}
+.snippet {
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--snippet-bg);
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.snippet-title {
+  color: #333333;
+}

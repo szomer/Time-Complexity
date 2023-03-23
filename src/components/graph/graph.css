@@ -1,0 +1,14 @@
+.Graph {
+  height: 300px;
+  padding: 10px;
+}
+
+.graph {
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: var(--card-bg);
+  box-shadow: 5px 5px 10px #00000055;
+  padding: 20px 5px;
+}

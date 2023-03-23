@@ -1,0 +1,45 @@
+.Input {
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+}
+.input {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: var(--card-bg);
+
+  box-shadow: 5px 5px 10px #00000055;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.input p {
+  font-size: 0.8rem;
+}
+
+input.form-control {
+  border: none;
+  background-color: #ffffff6e;
+}
+input.form-control:focus {
+  background-color: #fff;
+}
+
+form.form-control {
+  background-color: transparent;
+  border: none;
+}
+
+button.form-control {
+  background-color: #ffffff6e;
+  border: none;
+}
+button.form-control:hover {
+  background-color: #fff;
+}
