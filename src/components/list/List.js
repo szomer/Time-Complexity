@@ -6,7 +6,7 @@ function List() {
         <div className='List'>
 
             <div className='snippets-list'>
-                <h2 className='title'>List Snippets</h2>
+                <h2 className='title'>Code Snippets</h2>
                 <ListSnippet title={"CountToAndBack"} />
                 <ListSnippet title={"SumOfFactorial"} />
                 <ListSnippet title={"Print"} />
