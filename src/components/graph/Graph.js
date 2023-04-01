@@ -1,6 +1,5 @@
 import './graph.css';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { useEffect } from 'react';
 
 
 function Graph(props) {

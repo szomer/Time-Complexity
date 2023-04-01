@@ -32,7 +32,7 @@ function twoDimensionalArray(n) {
 
     for (var i = 0; i < n; i++) {
         for (var j = 0; j < n; j++) {
-            arr.push([i, j]);
+            arr.push(`${i}, ${j}`);
         }
     }
 
