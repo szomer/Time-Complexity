@@ -21,3 +21,12 @@
 .Snippet .title {
   text-align: center;
 }
+
+.Snippet p {
+  padding-left: 1rem;
+}
+
+.Snippet code {
+  color: var(--light);
+  font-size: 0.8rem;
+}

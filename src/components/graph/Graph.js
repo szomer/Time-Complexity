@@ -1,55 +1,20 @@
 import './graph.css';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 
-function Graph() {
-
-
-    const [data, setData] = useState([
-        {
-            loop: 0,
-            runtime: 0,
-        }
-    ]);
-
-    function insertData(newLoop, newRuntime) {
-        setData((old) => {
-            return [
-                ...old,
-                {
-                    loop: newLoop,
-                    runtime: newRuntime,
-                },
-            ]
-        })
-    }
-
-    function clearData() {
-        setData([
-            {
-                loop: 0,
-                runtime: 0,
-            }
-        ]);
-    }
-
-
-    useEffect(() => {
-        insertData(80, 100);
-    }, []);
-
+function Graph(props) {
 
     return (
         <div className='Graph'>
             <div className='graph'>
                 <h2 className='title'>Live Code Performance
                 </h2>
-                <p> <button onClick={() => { clearData(); }} className='btn btn-sm'>Clear data</button></p>
+                <p> <button onClick={props.clearData} className='btn btn-sm'>Clear data</button></p>
                 <div className='graph-content'>
                     <ResponsiveContainer>
                         <AreaChart
-                            data={data}
+                            data={props.data}
                             margin={{
                                 top: 10,
                                 right: 30,
