@@ -5,6 +5,7 @@ import Input from '../input/Input';
 import List from '../list/List';
 import Snippet from '../snippet/Snippet';
 import './App.css';
+import icon from './icon.png'
 import { oddEvenNumber, sumUp, twoDimensionalArray, fibonacci, factorial } from './snippetFunctions.js';
 
 const snippets = [
@@ -118,7 +119,7 @@ function App() {
   return (
     <div className="App">
 
-      <h2 id="app-title">Code Performance</h2>
+      <div id="app-title"><img src={icon}></img><h2>Code Performance</h2></div>
 
       <div className='app-container'>
 

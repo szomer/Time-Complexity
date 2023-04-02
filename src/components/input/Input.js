@@ -10,7 +10,7 @@ function Input(props) {
         e.preventDefault();
         setDisabledBtn(true);
 
-        if (Number(input)) props.setInputSize(input);
+        if (Number(input) && (input > -1)) props.setInputSize(input);
 
         setDisabledBtn(false);
     }
