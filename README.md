@@ -5,7 +5,7 @@ Run code snippets live in your browser. Give an input size (n) and calculate the
 - React frontend framework
 - ReCharts library for the graphs
 
-## Reccomended input sizes (n)
+## Recommended input sizes (n)
 
 For a medium-to-highend pc
 
