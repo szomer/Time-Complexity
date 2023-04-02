@@ -15,9 +15,9 @@ function Graph(props) {
                         <AreaChart
                             data={props.data}
                             margin={{
-                                top: 10,
-                                right: 30,
-                                left: 0,
+                                top: 5,
+                                right: 15,
+                                left: 10,
                                 bottom: 10,
                             }}
                         >

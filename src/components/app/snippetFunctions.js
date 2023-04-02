@@ -1,28 +1,27 @@
 function oddEvenNumber(n) {
     var startTime = performance.now();
 
-
     if (n % 2 === 0) {
-        console.log(`${n} is an even number.`);
+        console.log(`[oddEvenNumber] ${n} is an even number.`);
     } else {
-        console.log(`${n} is an odd number.`);
+        console.log(`[oddEvenNumber] ${n} is an odd number.`);
     };
 
     var endTime = performance.now();
-    return (endTime - startTime);
+    return (parseFloat((endTime - startTime).toFixed(8)));
 }
 
 function sumUp(n) {
     var startTime = performance.now();
 
-    let sum;
+    let sum = 0;
     for (let i = 0; i < n; i++) {
-        sum += i;
+        sum = (sum + i);
     }
-    console.log(sum);
+    console.log("[SumUp]", sum);
 
     var endTime = performance.now();
-    return (endTime - startTime);
+    return (parseFloat((endTime - startTime).toFixed(8)));
 }
 
 function twoDimensionalArray(n) {
@@ -36,10 +35,11 @@ function twoDimensionalArray(n) {
         }
     }
 
-    console.log(arr);
+    console.log("[Two Dimensional]", arr);
 
     var endTime = performance.now();
-    return (endTime - startTime);
+    return (parseFloat((endTime - startTime).toFixed(8)));
+
 }
 
 function fibonacci(n) {
@@ -55,10 +55,10 @@ function fibonacci(n) {
         n2 = nextTerm;
     }
 
-    console.log(arr);
+    console.log("[Fibonacci]", arr);
 
     var endTime = performance.now();
-    return (endTime - startTime);
+    return (parseFloat((endTime - startTime).toFixed(8)));
 }
 
 function recursive(n) {
@@ -73,7 +73,7 @@ function factorial(n) {
     recursive(n);
 
     var endTime = performance.now();
-    return (endTime - startTime);
+    return (parseFloat((endTime - startTime).toFixed(8)));
 }
 
 export { oddEvenNumber, sumUp, twoDimensionalArray, fibonacci, factorial };

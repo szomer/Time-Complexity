@@ -1,21 +1,19 @@
-.Input {
-  height: 300px;
-  width: 250px;
-  padding: 10px;
-}
 .input {
   height: 100%;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background: var(--card-bg);
-
+  background: var(--card-bg-top);
   box-shadow: 5px 5px 10px #00000055;
   padding: 20px 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
+}
+
+.form-control {
   text-align: center;
 }
 
@@ -42,4 +40,19 @@ button.form-control {
 }
 button.form-control:hover {
   background-color: #fff;
+}
+
+@media (max-width: 799px) {
+  .Input {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .Input {
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+  }
 }

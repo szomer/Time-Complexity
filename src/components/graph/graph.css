@@ -2,13 +2,12 @@
   width: 100%;
   height: 400px;
   padding: 10px;
+  overflow: hidden;
 }
 
 .Graph .graph {
   height: 100%;
   width: 100%;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
   background: var(--card-bg);
   box-shadow: 5px 5px 10px #00000055;
   padding: 20px 5px;
@@ -33,5 +32,21 @@
 .Graph .graph-content {
   width: 100%;
   height: 80%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 799px) {
+  .Graph .graph {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .Graph {
+    width: 600px;
+  }
+  .Graph .graph {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }

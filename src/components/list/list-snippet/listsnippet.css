@@ -1,19 +1,16 @@
-.ListSnippet {
-  height: 70px;
-}
 .snippet {
   height: 100%;
   border-radius: 5px;
   background-color: var(--snippet-bg);
   padding: 10px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #333333;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
+
 .snippet:hover {
   background-color: #ffffff8b;
   cursor: pointer;
@@ -21,4 +18,23 @@
 .active {
   color: #fff;
   border: 1px solid white;
+}
+
+@media (max-width: 799px) {
+  .ListSnippet {
+    height: 50px;
+  }
+  .snippet {
+    width: 110px;
+    text-align: center;
+    margin: 4px;
+  }
+}
+@media (min-width: 800px) {
+  .ListSnippet {
+    height: 70px;
+  }
+  .snippet {
+    margin: 10px;
+  }
 }
