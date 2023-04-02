@@ -1,9 +1,9 @@
 # Code Performance
 
-Run code snippets live in your browser. Give an input size (n) and calulate the runtime (miliseconds), displayed in a graph. To view the app live click [HERE](https://code-performance.web.app/) (hosted on Firebase).
+Run code snippets live in your browser. Give an input size (n) and calculate the runtime (miliseconds), displayed in a graph. To view the app live click [HERE](https://code-performance.web.app/) (hosted on Firebase).
 
 - React frontend framework
-- ReCharts library for the graph
+- ReCharts library for the graphs
 
 ## Reccomended input sizes (n)
 
