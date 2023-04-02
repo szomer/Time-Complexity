@@ -6,7 +6,7 @@ import List from '../list/List';
 import Snippet from '../snippet/Snippet';
 import './App.css';
 import icon from './icon.png'
-import { oddEvenNumber, sumUp, twoDimensionalArray, fibonacci, factorial } from './snippetFunctions.js';
+import { oddEvenNumber, sumUp, nestedLoop, fibonacci, factorial } from './snippetFunctions.js';
 
 const snippets = [
   {
@@ -34,29 +34,27 @@ const snippets = [
     func: sumUp
   },
   {
-    title: "Two Dimensional",
-    code: <code>function <b>twoDimensional</b> (n) &#123;<br />
-      &nbsp;var arr = [];<br />
+    title: "Nested Loop",
+    code: <code>function <b>nestedLoop</b> (n) &#123;<br />
+      &nbsp;var count = 0;<br />
       &nbsp;<b>for</b> (let i = 0; i &#60; n; i++) &#123;<br />
       &nbsp;&nbsp;<b>for</b> (let i = 0; i &#60; n; i++) &#123;<br />
-      &nbsp;&nbsp;&nbsp;arr.push([i, j]);<br />
+      &nbsp;&nbsp;&nbsp;count++;<br />
       &nbsp;&#125;&#125;<br />
-      &nbsp;console.log(arr);<br />
+      &nbsp;console.log(count);<br />
       &#125;</code>,
     o: "O(n^2)",
-    func: twoDimensionalArray
+    func: nestedLoop
   },
   {
     title: "Fibonacci",
     code: <code>function <b>fibonacci</b> (n) &#123;<br />
-      &nbsp;var arr = [];<br />
-      &nbsp;let n1 = 0, n2 = 1, nextTerm;<br />
-      &nbsp;<b>for</b> (let i = 0; i &#60; n; i++) &#123;<br />
-      &nbsp;&nbsp;arr.push(n1);<br />
-      &nbsp;&nbsp;nextTerm = n1 + n2;<br />
-      &nbsp;&nbsp;n1 = n2;<br />
-      &nbsp;&nbsp;n2 = nextTerm;<br />
-      &nbsp;&#125;&#125;</code>,
+      &nbsp;<b>if</b> (n &#60;= 1) &#123;<br />
+      &nbsp;&nbsp;return 1;<br />
+      &nbsp;&#125;<br />
+      &nbsp;return fibonacciRec(num - 1) +<br />
+      &nbsp;fibonacciRec(num - 2);<br />
+      &#125;</code>,
     o: "O(2^n)",
     func: fibonacci
   },

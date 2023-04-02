@@ -1,6 +1,6 @@
 # Code Performance
 
-Run code snippets live in your browser. Give an input size (n) and calulate the runtime in miliseconds, displayed in a graph.
+Run code snippets live in your browser. Give an input size (n) and calulate the runtime (miliseconds), displayed in a graph.
 
 - React frontend framework
 - ReCharts library for the graph
@@ -10,13 +10,16 @@ Run code snippets live in your browser. Give an input size (n) and calulate the 
 For a medium-to-highend pc
 
 1. Odd/Even: `n ≥ 0`
-2. Sum Up: `0 ≥ n ≤ 30.000.000`
-3. Two Dimensional: `0 ≥ n ≤ 4.000`
-4. Fibonacci: `0 ≥ n ≤ 10.000.000`
+2. Sum Up: `0 ≥ n ≤ 50.000.000`
+3. Nested Loop: `0 ≥ n ≤ 40.000`
+4. Fibonacci: `0 ≥ n ≤ 45`
 5. Factorial: `0 ≥ n ≤ 12`
 
 ## Screenshot
 
+Application for desktop devices and mobile devices.
+
 <p align="center">
-    <img alt="screenshot of the code performance application" src="./screenshot.jpg"/>
+    <img alt="code performance application for desktop" width="66.15%" src="./screenshot.jpg"/>
+    <img alt="code performance application for mobile"  width="32%" src="./screenshotmobile.jpg"/>
 </p>

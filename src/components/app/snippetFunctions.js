@@ -24,18 +24,18 @@ function sumUp(n) {
     return (parseFloat((endTime - startTime).toFixed(8)));
 }
 
-function twoDimensionalArray(n) {
+function nestedLoop(n) {
     var startTime = performance.now();
 
-    var arr = [];
+    var count = 0;
 
     for (var i = 0; i < n; i++) {
         for (var j = 0; j < n; j++) {
-            arr.push(`${i}, ${j}`);
+            count++;
         }
     }
 
-    console.log("[Two Dimensional]", arr);
+    console.log("[Nested Loop]", count);
 
     var endTime = performance.now();
     return (parseFloat((endTime - startTime).toFixed(8)));
@@ -45,21 +45,16 @@ function twoDimensionalArray(n) {
 function fibonacci(n) {
     var startTime = performance.now();
 
-    var arr = [];
-    let n1 = 0, n2 = 1, nextTerm;
-
-    for (let i = 1; i <= n; i++) {
-        arr.push(n1);
-        nextTerm = n1 + n2;
-        n1 = n2;
-        n2 = nextTerm;
-    }
-
-    console.log("[Fibonacci]", arr);
+    console.log("[Fibonacci] last number:", fibonacciRec(n - 1));
 
     var endTime = performance.now();
     return (parseFloat((endTime - startTime).toFixed(8)));
 }
+function fibonacciRec(num) {
+    if (num <= 1) return 1;
+    return fibonacciRec(num - 1) + fibonacciRec(num - 2);
+}
+
 
 function recursive(n) {
     for (var i = 0; i < n; i++) {
@@ -76,4 +71,4 @@ function factorial(n) {
     return (parseFloat((endTime - startTime).toFixed(8)));
 }
 
-export { oddEvenNumber, sumUp, twoDimensionalArray, fibonacci, factorial };
+export { oddEvenNumber, sumUp, nestedLoop, fibonacci, factorial };
