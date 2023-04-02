@@ -10,10 +10,10 @@ Run code snippets live in your browser. Give an input size (n) and calculate the
 For a medium-to-highend pc
 
 1. Odd/Even: `n ≥ 0`
-2. Sum Up: `0 ≥ n ≤ 2.500.000.000`
-3. Nested Loop: `0 ≥ n ≤ 80.000`
-4. Fibonacci: `0 ≥ n ≤ 44`
-5. Factorial: `0 ≥ n ≤ 12`
+2. Sum Up: `0 ≤ n ≤ 2.500.000.000`
+3. Nested Loop: `0 ≤ n ≤ 80.000`
+4. Fibonacci: `0 ≤ n ≤ 44`
+5. Factorial: `0 ≤ n ≤ 12`
 
 ## Screenshot
 
